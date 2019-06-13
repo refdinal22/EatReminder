@@ -28,6 +28,16 @@ public class MainActivity extends AppCompatActivity {
         add = findViewById(R.id.add);
         search = findViewById(R.id.search);
 
+        //button info
+        info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,InfoActivity.class);
+                startActivity(i);
+            }
+        });
+
+        //button search
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
