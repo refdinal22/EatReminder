@@ -37,6 +37,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //add
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,ReminderActivity.class);
+                startActivity(i);
+            }
+        });
+
         //button search
         search.setOnClickListener(new View.OnClickListener() {
             @Override

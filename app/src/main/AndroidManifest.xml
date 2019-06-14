@@ -21,6 +21,8 @@
             android:label="@string/title_activity_info"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ReminderActivity"></activity>
+        <receiver android:name="com.example.gita.eatreminder.receiver.AlarmReceiver"
+            android:process=":remote"/>
     </application>
 
 </manifest>

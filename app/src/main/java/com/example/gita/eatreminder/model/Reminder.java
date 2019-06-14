@@ -6,6 +6,15 @@ public class Reminder {
     private String note;
     private long startTime;
 
+    public Reminder() {
+    }
+
+    public Reminder(String type, String note, long startTime) {
+        this.type = type;
+        this.note = note;
+        this.startTime = startTime;
+    }
+
     public int getId() {
         return id;
     }
